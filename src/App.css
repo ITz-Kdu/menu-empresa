@@ -178,6 +178,11 @@ li.selected {
   }
 }
 
+.mostrar-nota{
+  color: #4a90e2;
+  background-color: #d0e8ff;
+}
+
 /* Lixeira */
 .lixeira {
   display: none;
