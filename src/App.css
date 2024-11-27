@@ -1,38 +1,226 @@
-.App {
-  text-align: center;
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image:url(Design\ sem\ nome\ \(10\).png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333;
+  animation: fadeIn 1s ease-out; /* Animação de fade-in para o corpo */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Container principal */
+div {
+  padding: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: rgba(0, 0, 0, 0.671);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 1.5s forwards; /* Fade-in suave para o conteúdo */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+/* Animação de fade-in */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+/* Títulos */
+h2 {
+  text-align: center;
+  color: #4a90e2;
+  font-size: 24px;
+  opacity: 0;
+  animation: slideUp 1s 0.5s forwards; /* Efeito de slide-up nos títulos */
+}
+
+h3 {
+  color: #666;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: slideUp 1s 0.7s forwards;
+}
+
+p{
+  color: #4a90e2;
+}
+
+/* Efeito de slide-up para os títulos */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Inputs e Textarea */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  opacity: 0;
+  animation: fadeIn 1s 1s forwards; /* Fade-in para inputs */
+}
+
+textarea {
+  height: 100px;
+}
+
+/* Botões */
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease; /* Efeito de transformação e cor */
+  opacity: 0;
+  animation: fadeIn 1s 1.5s forwards; /* Fade-in suave para botões */
+}
+
+button:hover {
+  background-color: #357ab7;
+  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+/* Navegação */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a90e2;
+  padding: 10px 0;
+  border-radius: 10px 10px 0 0;
+  gap: 20px;
+  animation: fadeIn 1s 2s forwards; /* Fade-in suave para a barra de navegação */
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 10px 15px;
+}
+
+nav button:hover {
+  text-decoration: underline;
+  transform: translateY(-2px); /* Levanta o botão um pouco ao passar o mouse */
+}
+
+/* Lista de Sugestões e Campanhas */
+ul {
+  list-style-type: none;
+  padding: 0;
+  opacity: 0;
+  animation: fadeIn 1s 2.5s forwards; /* Fade-in para as listas */
+}
+
+li {
+  background-color: #f0f8ff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: slideIn 0.5s forwards; /* Animação de entrada para cada item da lista */
+  display: flex;
+  justify-content: space-between; /* Espaça o ícone da lixeira */
+  align-items: center;
+}
+
+li.selected {
+  background-color: #d0e8ff;
+}
+
+/* Animação de slide-up para os itens da lista */
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Efeito para o item sendo removido */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+/* Lixeira */
+.lixeira {
+  display: none;
+  font-size: 24px;
+  color: #e74c3c;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.lixeira:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+/* Botões de apagar dados */
+.clear-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.clear-buttons button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.3s ease; /* Efeito de transformação e cor */
+}
+
+.clear-buttons button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05); /* Efeito de aumento no botão */
+}
+
+/* Animação de Fade-In para o conteúdo */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
