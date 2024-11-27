@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/menu-empresa-carlos/static/css/main.058c37a0.css",
+    "main.js": "/menu-empresa-carlos/static/js/main.1ab226e9.js",
+    "static/js/453.f88a1553.chunk.js": "/menu-empresa-carlos/static/js/453.f88a1553.chunk.js",
+    "static/media/Design sem nome (10).png": "/menu-empresa-carlos/static/media/Design sem nome (10).1706857fcb3acc23f6ab.png",
+    "index.html": "/menu-empresa-carlos/index.html",
+    "main.058c37a0.css.map": "/menu-empresa-carlos/static/css/main.058c37a0.css.map",
+    "main.1ab226e9.js.map": "/menu-empresa-carlos/static/js/main.1ab226e9.js.map",
+    "453.f88a1553.chunk.js.map": "/menu-empresa-carlos/static/js/453.f88a1553.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.058c37a0.css",
+    "static/js/main.1ab226e9.js"
+  ]
+}
