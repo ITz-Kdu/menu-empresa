@@ -2,9 +2,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image:url(Design\ sem\ nome\ \(10\).png) ;
+  background-image:url(fundo.jpeg) ;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 200%;
   color: #333;
   animation: fadeIn 1s ease-out; /* Animação de fade-in para o corpo */
 }
@@ -82,6 +82,7 @@ textarea {
 
 /* Botões */
 button {
+  text-decoration: none;
   background-color: #4a90e2;
   color: white;
   border: none;
@@ -103,6 +104,7 @@ button:hover {
 
 /* Navegação */
 nav {
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,7 +115,12 @@ nav {
   animation: fadeIn 1s 2s forwards; /* Fade-in suave para a barra de navegação */
 }
 
+a {
+  text-decoration: none;
+}
+
 nav button {
+  text-decoration: none;
   background: none;
   border: none;
   color: white;
@@ -124,7 +131,6 @@ nav button {
 }
 
 nav button:hover {
-  text-decoration: underline;
   transform: translateY(-2px); /* Levanta o botão um pouco ao passar o mouse */
 }
 
@@ -146,12 +152,17 @@ li {
   opacity: 0;
   animation: slideIn 0.5s forwards; /* Animação de entrada para cada item da lista */
   display: flex;
-  justify-content: space-between; /* Espaça o ícone da lixeira */
+  justify-content: space-between;
   align-items: center;
 }
 
 li.selected {
   background-color: #d0e8ff;
+}
+
+.camp-card {
+  width: 100%;
+  
 }
 
 /* Animação de slide-up para os itens da lista */
@@ -219,6 +230,11 @@ li.selected {
   background-color: #c0392b;
   transform: scale(1.05); /* Efeito de aumento no botão */
 }
+
+.edit, .clear {
+  width: 80px;
+}
+
 
 /* Animação de Fade-In para o conteúdo */
 @keyframes fadeIn {
