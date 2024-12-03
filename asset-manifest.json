@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/menu-empresa/static/css/main.a3bf5b1f.css",
-    "main.js": "/menu-empresa/static/js/main.e2acad34.js",
-    "static/js/453.f88a1553.chunk.js": "/menu-empresa/static/js/453.f88a1553.chunk.js",
-    "static/media/fundo.jpeg": "/menu-empresa/static/media/fundo.adc08c9093783138c75d.jpeg",
-    "index.html": "/menu-empresa/index.html",
-    "main.a3bf5b1f.css.map": "/menu-empresa/static/css/main.a3bf5b1f.css.map",
-    "main.e2acad34.js.map": "/menu-empresa/static/js/main.e2acad34.js.map",
-    "453.f88a1553.chunk.js.map": "/menu-empresa/static/js/453.f88a1553.chunk.js.map"
+    "main.css": "/menu-empresa-Carlos-Iago/static/css/main.72fb5b56.css",
+    "main.js": "/menu-empresa-Carlos-Iago/static/js/main.61542380.js",
+    "static/js/453.f88a1553.chunk.js": "/menu-empresa-Carlos-Iago/static/js/453.f88a1553.chunk.js",
+    "static/media/fundo.jpeg": "/menu-empresa-Carlos-Iago/static/media/fundo.adc08c9093783138c75d.jpeg",
+    "index.html": "/menu-empresa-Carlos-Iago/index.html",
+    "main.72fb5b56.css.map": "/menu-empresa-Carlos-Iago/static/css/main.72fb5b56.css.map",
+    "main.61542380.js.map": "/menu-empresa-Carlos-Iago/static/js/main.61542380.js.map",
+    "453.f88a1553.chunk.js.map": "/menu-empresa-Carlos-Iago/static/js/453.f88a1553.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3bf5b1f.css",
-    "static/js/main.e2acad34.js"
+    "static/css/main.72fb5b56.css",
+    "static/js/main.61542380.js"
   ]
 }
